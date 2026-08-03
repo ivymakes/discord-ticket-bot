@@ -26,7 +26,7 @@ BEFORE YOU START
 -----------------
 You need:
 
-- Node.js (nodejs.org) installed, version 18 or newer. If you're not
+- [Node.js](https://nodejs.org/) installed, version 18 or newer. If you're not
   sure whether you have it, open a terminal/command prompt and type:
 
       node -v
@@ -54,8 +54,7 @@ creates a node_modules folder, that's normal, leave it alone.
 
 STEP 3 - CREATE A DISCORD APPLICATION/BOT
 --------------------------------------------
-1. Go to the Discord Developer Portal:
-   discord.com/developers/applications
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
 
 2. Click "New Application", name it whatever you want
 

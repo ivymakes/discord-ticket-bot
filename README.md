@@ -6,7 +6,7 @@ opens a private channel for them, staff can claim/close it, and closing
 saves a text transcript. No database server needed, everything is stored
 in a plain data/tickets.json file.
 
-Made by Ivy (ivyyyuhh).
+Made by Ivy (ivymakes).
 
 
 WHAT IT DOES

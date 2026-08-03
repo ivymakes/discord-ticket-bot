@@ -39,7 +39,11 @@ async function openTicket(interaction) {
 
   await interaction.deferReply({ ephemeral: true });
 
-  const supportRoleIds = config.supportRoleIds || [];
+  const supportRoleIds = (config.supportRoleIds || []).filter((roleId) => {
+    const valid = interaction.guild.roles.cache.has(roleId);
+    if (!valid) console.warn(`Skipping supportRoleIds entry "${roleId}" — no matching role found in this server.`);
+    return valid;
+  });
   const categoryId = config.ticketCategoryId || null;
 
   const overwrites = [

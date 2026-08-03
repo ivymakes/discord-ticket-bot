@@ -33,4 +33,4 @@ for (const file of fs.readdirSync(eventsPath).filter((f) => f.endsWith('.js'))) 
 
 client.login(process.env.DISCORD_TOKEN);
 
-process.on('unhandledRejection', (err) => console.error('Unhandled promise rejection:', err));
+process.on('unhandledRejection', (err) => console.error('Unhandled promise rejection (bot is still running):', err));

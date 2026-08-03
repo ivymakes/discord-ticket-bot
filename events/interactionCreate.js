@@ -12,9 +12,9 @@ module.exports = {
       }
 
       if (interaction.isButton()) {
-        if (interaction.customId === 'ticket_open') return openTicket(interaction);
-        if (interaction.customId === 'ticket_claim') return claimTicket(interaction);
-        if (interaction.customId === 'ticket_close') return closeTicket(interaction);
+        if (interaction.customId === 'ticket_open') return await openTicket(interaction);
+        if (interaction.customId === 'ticket_claim') return await claimTicket(interaction);
+        if (interaction.customId === 'ticket_close') return await closeTicket(interaction);
       }
     } catch (err) {
       console.error('Error handling interaction:', err);
